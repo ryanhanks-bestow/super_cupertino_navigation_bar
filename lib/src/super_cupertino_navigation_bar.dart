@@ -893,6 +893,9 @@ class _SuperScaffoldState extends State<SuperScaffold> {
                                                         _focusNode.unfocus();
                                                         _editingController
                                                             .clear();
+                                                        widget.appBar.searchBar!
+                                                            .onChanged
+                                                        ?.call('');
                                                       },
                                                       child: AnimatedContainer(
                                                         duration: widget
